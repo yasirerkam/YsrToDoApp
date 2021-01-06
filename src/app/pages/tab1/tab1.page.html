@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+	<ion-toolbar color="mavi">
+	</ion-toolbar>
+
+	<ion-toolbar color="mavi">
+		<ion-title>
+			YAPILACAKLAR
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="grey" class="ion-padding">
+	<ion-header collapse="condense">
+		<ion-toolbar color="dark">
+			<ion-title size="large">YAPILACAKLAR</ion-title>
+		</ion-toolbar>
+	</ion-header>
+	<app-lists [completed]="false"></app-lists>
+	<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+		<ion-fab-button color="success" (click)="addList()">
+			<ion-icon name="add"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+</ion-content>
